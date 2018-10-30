@@ -1,6 +1,8 @@
 # This is my old simple project (created in 2009) ported from J2ME to android now. I didn't make any changes 
 # in the base code of physics engine, so it contains comments in Poslish language.
 
+This is implementation of SAT (Separating Axis Theory)
+
 ### License
 
 Simple Database Library is released under the [Apache 2.0 license](LICENSE).
