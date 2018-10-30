@@ -1,0 +1,43 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.0-beta01'
+        classpath 'com.google.gms:google-services:3.1.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.51"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+    }
+}
+import groovy.json.JsonSlurper
+
+def versionFile = file('versions.json')
+def json
+if (versionFile.exists()) {
+    json = new JsonSlurper().parseText(versionFile.text)
+} else throw new GradleException("Unable to retrieve latest versions, please check your internet connection")
+
+ext {
+    androidToolsVersion = json.androidBuildtoolsVersion
+    androidSDKVersion = json.androidSDKVersion
+    androidGradleToolsVersion = json.androidGradleToolVersion
+    prop_keyAlias = json.keyAlias
+    prop_keyPassword = json.keyPassword
+    prop_storePassword = json.storePassword
+}
+allprojects {
+    repositories {
+        mavenLocal()
+        jcenter()
+        google()
+        maven { url 'http://maven.ghostscript.com/' }
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

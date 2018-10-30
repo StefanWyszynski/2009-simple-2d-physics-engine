@@ -1,0 +1,41 @@
+<resources>
+	<style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+	</style>
+
+	<!-- Application theme. -->
+	<style name="AppTheme" parent="AppBaseTheme">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+		<!--<item name="android:typeface">normal</item>-->
+		<item name="android:typeface">serif</item>
+	</style>
+
+	<style name="ADBAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+		<!-- Used for the buttons -->
+		<item name="colorAccent">#FFC107</item>
+		<!-- Used for the title and text -->
+		<item name="android:textColorPrimary">#FFFFFF</item>
+		<!-- Used for the background -->
+		<item name="android:background">#4CAF50</item>
+	</style>
+
+	<style name="ToolBarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+		<item name="android:textColorPrimary">#FFFFFF</item>
+		<item name="android:textColorPrimaryInverse">#FFFFFF</item>
+	</style>
+
+	<style name="BGSimple">
+		<item name="android:layout_margin">15dp</item>
+		<item name="android:background">@drawable/buble_simple</item>
+	</style>
+
+	<style name="ToolbarTitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+		<item name="android:textSize">20dp</item>
+		<item name="android:textColor">@color/font_white</item>
+		<!-- include other attributes you want to change: textColor, textStyle, etc -->
+	</style>
+
+	<style name="ToolbarSubtitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+		<item name="android:textSize">14dp</item>
+		<item name="android:textColor">@color/font_white</item>
+	</style>
+</resources>

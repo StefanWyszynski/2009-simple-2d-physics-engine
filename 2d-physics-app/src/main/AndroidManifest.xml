@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.physics_2d_demo">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".PhysicsDemoApp"
+        android:icon="@mipmap/icon_app_launcher"
+        android:roundIcon="@mipmap/icon_app_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".DemoActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

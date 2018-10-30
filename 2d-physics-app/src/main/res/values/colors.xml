@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item name="gray_2" type="color">#FF2b3645</item>
+	<item name="gray_4" type="color">#FF757576</item>
+	<item name="white" type="color">#FFffffff</item>
+	<item name="font_white" type="color">#FFffffff</item>
+
+	<color name="list_bg_pressed_start">#303030</color>
+	<color name="list_bg_pressed_end">#FF262626</color>
+	<color name="menu_divider">#0099e6</color>
+	<color name="buble_frame_end">#ff44bbf4</color>
+	<color name="buble_frame_start">#ff5bcefd</color>
+
+	<color name="black">#000000</color>
+</resources>
